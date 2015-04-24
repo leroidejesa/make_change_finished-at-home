@@ -5,5 +5,9 @@ class Fixnum
     numberofdimes = remainder_after_quarters./(10)
     numberofnickels = (remainder_after_quarters.-(numberofdimes*10))./5
     numberofpennies = remainder_after_quarters.-(numberofdimes*10.+(numberofnickels*5))
+    puts numberofquarters
+    puts numberofdimes
+    puts numberofnickels
+    puts numberofpennies
   end
 end

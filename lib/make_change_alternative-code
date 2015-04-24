@@ -1,0 +1,9 @@
+class Fixnum
+  define_method(:make_change) do
+    numberofquarters = self./(25)
+    remainder_after_quarters = self.%(25)
+    numberofdimes = remainder_after_quarters./(10)
+    numberofnickels = (remainder_after_quarters.-(numberofdimes*10))./5
+    numberofpennies = remainder_after_quarters.-(numberofdimes*10.+(numberofnickels*5))
+  end
+end
